@@ -9,8 +9,8 @@ body{
 }
 
 .container{
-    background-color: #282828;
-    height: auto;
+    background-color: #121212;
+    min-height: 100vh;
 }
 
 header{
@@ -69,7 +69,21 @@ header{
 #iconMenu{
     display:none;
 }
-
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skillsContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    height: 80px;
+    width: 80%;
+}
 @media screen and (max-width: 768px) {
     header{
         flex-direction: column;
