@@ -42,6 +42,10 @@
       rgba(38,160,201,1) 100%);
 }
 
+.card img{
+    max-width: 18rem;
+}
+
 @media screen and (max-width:768px) {
     .projetosContainer{
         margin-top: 10px;
