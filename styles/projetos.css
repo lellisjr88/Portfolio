@@ -43,7 +43,9 @@
 }
 
 .card img{
-    max-width: 18rem;
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
 }
 
 @media screen and (max-width:768px) {
