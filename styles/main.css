@@ -1,6 +1,6 @@
 main{
+    height: 60vh;
     width: 100%;
-    background-color: #CCC;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -24,19 +24,47 @@ main{
 
 .imgcContainer img{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 50%;
 }
 
+
+/*Habilidades*/
+
+.habilidades {
+   width: 100%;
+   padding: 10px;
+}
+.containerimg{
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* From https://css.glass */
+    background: rgba(31, 165, 200, 0.19);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(31, 165, 200, 0.22);
+}
+
+.containerimg img{
+    max-width: 60px;
+}
 @media screen and (max-width: 768px) {
     main{
         flex-direction: column;
+        height: auto;
     }
     .helloContainer, .imgcContainer {
         max-width: 400px;
     }
     .helloContainer h1, h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     
     .helloContainer p{
@@ -47,6 +75,15 @@ main{
     }
     .imgcContainer img{
         width: 100%;
-        max-width: 250px;
+        max-width: 220px;
     }
+
+    .habilidades {
+        width: 100%;
+        margin: 0 auto;
+     }
+     
+.containerimg img{
+    max-width: 32px;
+}
 }
