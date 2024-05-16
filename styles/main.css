@@ -1,66 +1,52 @@
 main{
+    width: 100%;
+    background-color: #CCC;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 50px;
-    padding-bottom: 20px;
 }
 
-.name{
-    max-width: 600px;
+.helloContainer, .imgcContainer {
+    max-width: 500px;
+}
+
+.helloContainer h1, h2{
+    font-size: 3em;
     text-align: center;
-    color:#FFF;
 }
-.name h1, h2{
-    font-size: 50px;
+
+.helloContainer p{
+    font-size: 1.5em;
+    text-align: center;
 }
-.name p{
-    font-size: 25px;    
-}
-.img{
-    padding: 5px;
-}
-.img img{
+
+.imgcContainer img{
     width: 100%;
     max-width: 400px;
     border-radius: 50%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     main{
         flex-direction: column;
-        justify-content: center;
-        margin: 20px;
     }
-
-    .name{
-        margin-bottom: 10px;
-        max-width: 320px;
+    .helloContainer, .imgcContainer {
+        max-width: 400px;
     }
-    .name h1, h2{
-        font-size: 32px;
-    }
-    .name p{
-        font-size: 16px;    
+    .helloContainer h1, h2{
+        font-size: 1.5em;
     }
     
-    .img img{
-        max-width: 300px;
-        margin-bottom: 10px;
+    .helloContainer p{
+        font-size: 1em;
     }
-}
-
-@media screen and (max-width:425px) {
-    .img img{
+    .imgcContainer{
+        padding-top: 15px;
+    }
+    .imgcContainer img{
         width: 100%;
-        max-width: 200px;
-        border-radius: 50%;
-    }
-    .name h1, h2{
-        font-size: 25px;
-    }
-    .name p{
-        font-size: 14px;   
+        max-width: 250px;
     }
 }
