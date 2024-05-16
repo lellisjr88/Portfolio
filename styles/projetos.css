@@ -1,0 +1,54 @@
+.projetosContainer{
+    margin-top: 50px;
+    padding: 10px;
+    height: 80vh;
+}
+.projetos{
+    margin-bottom: 50px;
+}
+
+.projetos h3{
+    text-decoration: underline #303e65 5px;
+    text-underline-offset: 10px;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+     /* From https://css.glass */
+     background: rgba(31, 165, 200, 0.19);
+     border-radius: 10px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(3.6px);
+     -webkit-backdrop-filter: blur(3.6px);
+     border: 1px solid rgba(31, 165, 200, 0.22);
+     color: #FFF;
+}
+
+.card a{
+    background-color: #303e65;
+}
+
+.card a:hover{
+    background: linear-gradient(90deg,
+     rgba(15,23,36,1) 0%, 
+     rgba(130,112,224,1) 35%,
+      rgba(38,160,201,1) 100%);
+}
+
+@media screen and (max-width:768px) {
+    .projetosContainer{
+        margin-top: 10px;
+        height: auto;
+    }
+    .projetos{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
