@@ -1,7 +1,10 @@
 .projetosContainer{
     margin-top: 50px;
-    padding: 10px;
+    padding: 20px;
     height: 80vh;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .projetos{
     margin-bottom: 50px;
@@ -11,16 +14,19 @@
     text-decoration: underline #303e65 5px;
     text-underline-offset: 10px;
 }
-
-.cardsContainer{
+.cardsWrapperContainer{
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    gap: 10px;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
 }
-
-.card{
+.cardsContainer{
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid #303e65;
+    height: auto;
+    padding-bottom: 10px;
      /* From https://css.glass */
      background: rgba(31, 165, 200, 0.19);
      border-radius: 10px;
@@ -28,24 +34,57 @@
      backdrop-filter: blur(3.6px);
      -webkit-backdrop-filter: blur(3.6px);
      border: 1px solid rgba(31, 165, 200, 0.22);
-     color: #FFF;
 }
-
-.card a{
-    background-color: #303e65;
-}
-
-.card a:hover{
-    background: linear-gradient(90deg,
-     rgba(15,23,36,1) 0%, 
-     rgba(130,112,224,1) 35%,
-      rgba(38,160,201,1) 100%);
-}
-
-.card img{
+.cardImg{
     width: 100%;
-    max-width: 15rem;
-    height: auto;
+    height: 200px;
+    border-radius: 10px;
+}
+.cardImg img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.cardDescription{
+    padding: 10px;
+    text-align: center;
+    color: black;
+    line-height: 25px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.titleCard{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cardButton button{
+    width: 150px;
+    height: 40px;
+    background-color: #303e65;
+    border-radius: 10px;
+    border: 1px solid #8a62d5;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.cardButton button:hover{
+    background: 
+    linear-gradient(90deg, rgba(15,23,36,1) 0%, 
+    rgba(130,112,224,1) 35%, rgba(38,160,201,1) 100%);
+}
+
+.cardButton button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+
 }
 
 @media screen and (max-width:768px) {
