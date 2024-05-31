@@ -65,9 +65,24 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.233);
   backdrop-filter: blur(3.6px);
   -webkit-backdrop-filter: blur(3.6px);
-  min-height: 250px;
   padding: 20px;
   z-index: 1;
+}
+
+.wrapperUlHabilidades {
+  margin-top: 10px;
+}
+
+.habilidadesText ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.habilidadesText ul li {
+  list-style-image: url("../assets/iconMiniTag.png");
+  margin-right: 7px;
+  margin-left: 20px;
 }
 
 .sobreMim,
@@ -80,4 +95,22 @@
 .habilidadesText,
 .educacao {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sobreMim,
+  .habilidadesText,
+  .educacao p {
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sobreMim,
+  .habilidadesText,
+  .educacao p {
+    font-size: 14px;
+  }
 }
