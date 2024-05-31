@@ -1,0 +1,83 @@
+.sobreContainer {
+  margin-top: 50px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.sobre {
+  margin-bottom: 50px;
+}
+
+.sobre h4 {
+  text-decoration: underline #303e65 5px;
+  text-underline-offset: 10px;
+  font-size: 1.2em;
+}
+.wrapperSobreEducacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.buttonsWrapper {
+  display: flex;
+  width: 80%;
+}
+
+.buttonsWrapper button {
+  width: 150px;
+  height: 50px;
+  background: rgba(31, 166, 200, 0.068);
+  border: 1px solid transparent;
+  border-bottom: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 0.8em;
+}
+.buttonsWrapper button:nth-child(1) {
+  border-top-left-radius: 10px;
+  border: none;
+}
+
+.buttonsWrapper button:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+.buttonsWrapper button:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-left: none;
+}
+.buttonsWrapper button:hover {
+  background-color: #1f2c41;
+}
+
+.sobreMim,
+.habilidadesText,
+.educacao {
+  width: 80%;
+  margin: -8px auto;
+  background-color: #1f2c41;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.233);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  height: 250px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.sobreMim,
+.habilidadesText,
+.educacao p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+.habilidadesText,
+.educacao {
+  display: none;
+}
