@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/projetos.css" />
     <link rel="stylesheet" href="./styles/sobre.css" />
+    <link rel="stylesheet" href="./styles/contato.css" />
   </head>
   <body>
     <header>
@@ -182,6 +183,36 @@
             <span>2022</span>
           </p>
         </div>
+      </div>
+    </section>
+    <section class="contatoContainer" id="contato">
+      <div class="contato">
+        <h5>Fale Comigo</h5>
+      </div>
+      <div class="wrapperForm">
+        <form>
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="João da Silva"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="joao@email.com"
+          />
+          <label for="text">Mensagem</label>
+          <textarea
+            name="text"
+            id="textoInputs"
+            placeholder="Sua Mensagem"
+          ></textarea>
+          <button type="submit" id="botaoEnviar">Enviar Mensagem</button>
+        </form>
       </div>
     </section>
     <script src="../scripts/index.js"></script>

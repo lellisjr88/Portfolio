@@ -1,0 +1,80 @@
+.contatoContainer {
+  margin-top: 50px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.contato {
+  margin-bottom: 50px;
+}
+
+.contato h5 {
+  text-decoration: underline #303e65 5px;
+  text-underline-offset: 10px;
+  font-size: 1.2em;
+}
+
+.wrapperForm {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapperForm form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.wrapperForm form label {
+  text-align: justify;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.wrapperForm form input::placeholder {
+  color: #fff;
+}
+.wrapperForm form input,
+textarea {
+  height: 40px;
+  outline: none;
+  background-color: #1f2c41;
+  border: 1px solid #303e65;
+  border-radius: 8px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+#textoInputs {
+  min-height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 5px;
+}
+
+textarea::placeholder {
+  color: #fff;
+}
+
+.wrapperForm form button {
+  margin-top: 10px;
+  height: 40px;
+  background-color: #303e65;
+  border: 1px solid #303e65;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.wrapperForm form button:hover {
+  background-color: #1f2c41;
+}
