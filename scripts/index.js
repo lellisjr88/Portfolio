@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 const button = document.querySelector("#iconMenu");
 const menu = document.querySelector(".nav");
 
