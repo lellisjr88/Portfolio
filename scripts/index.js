@@ -69,10 +69,11 @@ emailForm.addEventListener('submit', function (event) {
 
   // const isValid = validateEmail(emailRecebido);
 
-  if (nomeRecebido === "" || emailRecebido === "" || messageRecebida === "") {
-    alert('Preencha todos os campos do formulário')
+
+     if (nomeRecebido === "" || emailRecebido === "" || messageRecebida === "") {
+        alert('Preencha todos os campos do formulário')
     return;
-  } else{
+    }else{
     const templateParams = {
       from_name: nomeRecebido,
       message: messageRecebida,
@@ -86,9 +87,9 @@ emailForm.addEventListener('submit', function (event) {
     }, (err) => {
       console.log("Erro", err)
     })
-    nameInput.value = ""
-    emailInput.value = ""
-    messageInput.value = ""
+      nameInput.value = ""
+      emailInput.value = ""
+      messageInput.value = ""
   }
 
   
