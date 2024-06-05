@@ -24,7 +24,7 @@
 .wrapperForm form {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -77,4 +77,11 @@ textarea::placeholder {
 
 .wrapperForm form button:hover {
   background-color: #1f2c41;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperForm form {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
