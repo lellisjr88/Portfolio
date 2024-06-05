@@ -71,7 +71,21 @@ emailForm.addEventListener('submit', function (event) {
 
 
     if (nomeRecebido === "" || emailRecebido === "" || messageRecebida === "") {
-        alert('Preencha todos os campos do formulário')
+      Toastify({
+        text: "Preencha todos os campos do formulário",
+        duration: 1500,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+          width: 300,
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
         return;
     } else {
       const templateParams = {
@@ -82,10 +96,35 @@ emailForm.addEventListener('submit', function (event) {
 
     emailjs.send("service_5iy45mn","template_4dhg4fb", templateParams, "djP1Jof0FYewmztXu")
     .then((response) => {
-      alert('E-mail enviado com sucesso!')
-      console.log("email enviado", response.status, response.text)
+      Toastify({
+        text: "Email enviado com sucesso",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     }, (err) => {
-      console.log("Erro", err)
+      Toastify({
+        text: "Infelizmente tivemos um erro. Tente novamente em instantes.",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     })
       nameInput.value = ""
       emailInput.value = ""
