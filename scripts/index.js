@@ -81,6 +81,7 @@ emailForm.addEventListener('submit', function (event) {
 
     emailjs.send("service_5iy45mn","template_4dhg4fb", templateParams, "djP1Jof0FYewmztXu")
     .then((response) => {
+      alert('E-mail enviado com sucesso!')
       console.log("email enviado", response.status, response.text)
     }, (err) => {
       console.log("Erro", err)
