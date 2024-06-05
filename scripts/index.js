@@ -70,14 +70,14 @@ emailForm.addEventListener('submit', function (event) {
   // const isValid = validateEmail(emailRecebido);
 
 
-     if (nomeRecebido === "" || emailRecebido === "" || messageRecebida === "") {
+    if (nomeRecebido === "" || emailRecebido === "" || messageRecebida === "") {
         alert('Preencha todos os campos do formulário')
-    return;
-    }else{
-    const templateParams = {
-      from_name: nomeRecebido,
-      message: messageRecebida,
-      email: emailRecebido
+        return;
+    } else {
+      const templateParams = {
+        from_name: nomeRecebido,
+        message: messageRecebida,
+        email: emailRecebido
     }
 
     emailjs.send("service_5iy45mn","template_4dhg4fb", templateParams, "djP1Jof0FYewmztXu")
