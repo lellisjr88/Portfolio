@@ -54,12 +54,39 @@ buttonSobre.addEventListener("click", function () {
 
 //Formulário
 
-const buttonEnviar = document.getElementById("botaoEnviar");
+const nameInput = document.querySelector("#name")
+const emailInput = document.querySelector("#email")
+const messageInput = document.querySelector('#textoInputs')
+const emailForm = document.querySelector("#email-Form")
 
-buttonEnviar.addEventListener("click", function (e) {
-  e.preventDefault();
-  alert(
-    "Olá, estamos trabalhando neste formulário " +
-      "Logo você poderá entrar em contato comigo!"
-  );
-});
+emailForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+
+  nomeRecebido = nameInput.value;
+  emailRecebido = emailInput.value;
+  messageRecebida = messageInput.value;
+
+  // const isValid = validateEmail(emailRecebido);
+
+  if (nomeRecebido === "" || emailRecebido === "" || messageRecebida === "") {
+    alert('Preencha todos os campos do formulário')
+    return;
+  } else{
+    alert("Email enviado com sucesso")
+
+    nameInput.value = ""
+    emailInput.value = ""
+    messageInput.value = ""
+  }
+
+  
+
+})
+
+// //Função para validar email
+
+// const validateEmail = (email) => {
+//   const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+//   return regex.test(email)
+// }
