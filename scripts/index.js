@@ -51,3 +51,15 @@ buttonSobre.addEventListener("click", function () {
     sobreMim.style.display = "block";
   }
 });
+
+//Formulário
+
+const buttonEnviar = document.getElementById("botaoEnviar");
+
+buttonEnviar.addEventListener("click", function (e) {
+  e.preventDefault();
+  alert(
+    "Olá, estamos trabalhando neste formulário " +
+      "Logo você poderá entrar em contato comigo!"
+  );
+});
