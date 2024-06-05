@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 const button = document.querySelector("#iconMenu");
 const menu = document.querySelector(".nav");
 
@@ -73,8 +74,18 @@ emailForm.addEventListener('submit', function (event) {
     alert('Preencha todos os campos do formulário')
     return;
   } else{
-    alert("Email enviado com sucesso")
+    const templateParams = {
+      from_name: nomeRecebido,
+      message: messageRecebida,
+      email: emailRecebido
+    }
 
+    emailjs.send("service_5iy45mn","template_4dhg4fb", templateParams, "djP1Jof0FYewmztXu")
+    .then((response) => {
+      console.log("email enviado", response.status, response.text)
+    }, (err) => {
+      console.log("Erro", err)
+    })
     nameInput.value = ""
     emailInput.value = ""
     messageInput.value = ""
