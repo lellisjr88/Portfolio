@@ -1,0 +1,36 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+    border-top: 1px solid #303e65;
+}
+
+.wrapperIconsFooter{
+    width: 50%;
+    margin: 0 auto;
+    height: 60px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#gitFooter{
+    margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+    footer{
+        height: auto;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .wrapperIconsFooter{
+        width: 80%;
+    }
+    
+}

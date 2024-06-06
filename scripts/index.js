@@ -141,3 +141,5 @@ emailForm.addEventListener('submit', function (event) {
 //   const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
 //   return regex.test(email)
 // }
+
+//Footer Date
