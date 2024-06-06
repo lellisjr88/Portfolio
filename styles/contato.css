@@ -61,7 +61,9 @@ textarea {
 textarea::placeholder {
   color: #fff;
 }
-
+#name, #email, #textoInputs{
+  margin-bottom: 20px;
+}
 .wrapperForm form button {
   margin-top: 10px;
   height: 40px;
@@ -83,5 +85,8 @@ textarea::placeholder {
   .wrapperForm form {
     width: 100%;
     margin: 0 auto;
+  }
+  #name, #email, #textoInputs{
+    margin-bottom: 8px;
   }
 }
