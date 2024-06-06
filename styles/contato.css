@@ -62,7 +62,7 @@ textarea::placeholder {
   color: #fff;
 }
 #name, #email, #textoInputs{
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .wrapperForm form button {
   margin-top: 10px;
