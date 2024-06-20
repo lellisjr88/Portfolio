@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="/assets/favIcon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/favIcon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/projetos.css" />
     <link rel="stylesheet" href="./styles/sobre.css" />
     <link rel="stylesheet" href="./styles/contato.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <title>Front-Enderson</title>
   </head>
   <body>
@@ -19,7 +27,11 @@
         <h1>
           <a href="#main"> Front-Enderson </a>
         </h1>
-        <img src="./assets/codeHeader.png" alt="icone de código HTML" id="iconHtml" />
+        <img
+          src="./assets/codeHeader.png"
+          alt="icone de código HTML"
+          id="iconHtml"
+        />
         <img src="./assets/menuOpen.svg" alt="icone de menu" id="iconMenu" />
       </div>
       <nav class="nav">
@@ -52,89 +64,131 @@
       <div class="projetos">
         <h3>PROJETOS</h3>
       </div>
-      <div class="cardsWrapperContainer">
-        <div class="cardsContainer">
-          <div class="cardImg">
-            <img src="./assets/filmesLjr.png" alt="" />
-          </div>
-          <div class="cardDescription">
-            <p class="titleCard">Catálogo de Filmes</p>
-            <p>Projeto realizado utilizando React e a API TMDB.</p>
-          </div>
-          <div class="cardButton">
-            <button>
-              <a
-                href="https://lellis-filmes.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Ver Projeto</a
-              >
-            </button>
-          </div>
+      <article class="c-carousel c-carousel--responsive">
+        <div class="c-carousel__slides js-carousel--responsive" >
+          <article class="c-carousel__slide">
+            <div class="cardsContainer">
+              <div class="cardImg">
+                <img src="./assets/filmesLjr.png" alt="" />
+              </div>
+              <div class="cardDescription">
+                <p class="titleCard">Catálogo de Filmes</p>
+                <p>Projeto realizado utilizando React e a API TMDB.</p>
+              </div>
+              <div class="cardButton">
+                <button>
+                  <a
+                    href="https://lellis-filmes.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver Projeto</a
+                  >
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="c-carousel__slide">
+            <div class="cardsContainer">
+              <div class="cardImg">
+                <img src="./assets/imgBuscadorCep.png" alt="" />
+              </div>
+              <div class="cardDescription">
+                <p class="titleCard">Buscador de Cep.</p>
+                <p>Projeto realizado utilizando React e a API Viacep.</p>
+              </div>
+              <div class="cardButton">
+                <button>
+                  <a
+                    href="https://qualcep.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver Projeto</a
+                  >
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="c-carousel__slide">
+            <div class="cardsContainer">
+              <div class="cardImg">
+                <img src="./assets/errorPage.png" alt="" />
+              </div>
+              <div class="cardDescription">
+                <p class="titleCard">Página de Erro 404</p>
+                <p>Projeto realizado utilizando HTML e CSS</p>
+              </div>
+              <div class="cardButton">
+                <button>
+                  <a
+                    href="https://errorpage-coral.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver Projeto</a
+                  >
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="c-carousel__slide">
+            <div class="cardsContainer">
+              <div class="cardImg">
+                <img src="./assets/siteInstitucional.png" alt="" />
+              </div>
+              <div class="cardDescription">
+                <p class="titleCard">Site Institucional</p>
+                <p>Projeto realizado utilizando HTML, CSS e Javascript</p>
+              </div>
+              <div class="cardButton">
+                <button>
+                  <a
+                    href="https://seuinstitucional.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver Projeto</a
+                  >
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="c-carousel__slide">
+            <div class="cardsContainer">
+              <div class="cardImg">
+                <img src="./assets/slideshow.png" alt="" />
+              </div>
+              <div class="cardDescription">
+                <p class="titleCard">Slide Show</p>
+                <p>Projeto realizado utilizando HTML, CSS e Javascript</p>
+              </div>
+              <div class="cardButton">
+                <button>
+                  <a
+                    href="https://slideshowljr.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver Projeto</a
+                  >
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="cardsContainer">
-          <div class="cardImg">
-            <img src="./assets/imgBuscadorCep.png" alt="" />
-          </div>
-          <div class="cardDescription">
-            <p class="titleCard">Buscador de Cep.</p>
-            <p>Projeto realizado utilizando React e a API Viacep.</p>
-          </div>
-          <div class="cardButton">
-            <button>
-              <a
-                href="https://qualcep.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Ver Projeto</a
-              >
-            </button>
-          </div>
-        </div>
-        <div class="cardsContainer">
-          <div class="cardImg">
-            <img src="./assets/errorPage.png" alt="" />
-          </div>
-          <div class="cardDescription">
-            <p class="titleCard">Página de Erro 404</p>
-            <p>Projeto realizado utilizando HTML e CSS</p>
-          </div>
-          <div class="cardButton">
-            <button>
-              <a
-                href="https://errorpage-coral.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Ver Projeto</a
-              >
-            </button>
-          </div>
-        </div>
-      <div class="cardsContainer">
-          <div class="cardImg">
-            <img src="./assets/siteInstitucional.png" alt="" />
-          </div>
-          <div class="cardDescription">
-            <p class="titleCard">Site Institucional</p>
-            <p>Projeto realizado utilizando HTML, CSS e Javascript</p>
-          </div>
-          <div class="cardButton">
-            <button>
-              <a
-                href="https://seuinstitucional.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Ver Projeto</a
-              >
-            </button>
-          </div>
-        </div>
+      <div class="buttonsCarrossel">
+        <button class="js-carousel--responsive-prev" aria-label="Anterior" id="prevButtonCarrousel">
+          <img src="./assets/arrow_left_blue.svg" alt="">
+        </button>
+        <button class="js-carousel--responsive-next" aria-label="Próximo" id="nextButtonCarrousel">
+          <img src="./assets/arrow_right_blue.svg" alt="">
+        </button>
       </div>
-     <div class="vejaMaisProjetos">
-      <button id="VejaMaisProjetos"><a target="_blank" href="https://github.com/lellisjr88">
-        Veja mais Projetos
-      </a></button>
-     </div>
+        <div class="js-carousel--responsive-dots" role="tablist"></div>
+      </article>
+      <div class="vejaMaisProjetos">
+        <button id="VejaMaisProjetos">
+          <a target="_blank" href="https://github.com/lellisjr88">
+            Veja mais Projetos
+          </a>
+        </button>
+      </div>
     </section>
     <section class="sobreContainer" id="sobre">
       <div class="sobre">
@@ -224,23 +278,32 @@
       </div>
     </section>
     <footer>
-        <div class="wrapperIconsFooter">
-          <div class="iconsFooter">
-            <a href="https://www.linkedin.com/in/lellisjunior/" target="_blank">
-               <img src="./assets/inFooter.png" alt="Icone Linkedin">
-            </a>
-          </div>
-          <div class="iconsFooter">
-            <a href="https://github.com/lellisjr88" target="_blank">
-              <img src="./assets/gitFooter.png" alt="Icone Github" id="gitFooter">
-           </a>
-          </div>
+      <div class="wrapperIconsFooter">
+        <div class="iconsFooter">
+          <a href="https://www.linkedin.com/in/lellisjunior/" target="_blank">
+            <img src="./assets/inFooter.png" alt="Icone Linkedin" />
+          </a>
         </div>
+        <div class="iconsFooter">
+          <a href="https://github.com/lellisjr88" target="_blank">
+            <img
+              src="./assets/gitFooter.png"
+              alt="Icone Github"
+              id="gitFooter"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="../scripts/index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
