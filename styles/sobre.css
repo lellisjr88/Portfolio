@@ -98,6 +98,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .sobre {
+   text-align: center;
+  }
+  
   .sobreMim,
   .habilidadesText,
   .educacao p {

@@ -82,6 +82,9 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+  .contato {
+    text-align: center;
+  }
   .wrapperForm form {
     width: 100%;
     margin: 0 auto;
